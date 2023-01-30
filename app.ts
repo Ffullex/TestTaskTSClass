@@ -1,6 +1,7 @@
 interface Array<T> {
     find(predicate: (value: T, index: number, obj: Array<T>) => boolean, thisArg?: any): T | undefined;
 }
+
 interface Array<T> {
     includes(searchElement: T, fromIndex?: number): boolean;
 }
@@ -223,7 +224,7 @@ function getAllChildrenTest():boolean {
     return false
 }
 
-const getAllParentsTest = ():boolean => {
+function getAllParentsTest(): boolean {
     const testTreeStoreInstance = new TreeStore(EXAMPLE_ITEMS_FOR_TEST);
 
     const result = testTreeStoreInstance.getAllParents(7)
