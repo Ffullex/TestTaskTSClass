@@ -95,11 +95,6 @@ class TreeStore {
         return result
     }
 
-    // static checkParent = (result: ItemType[], items: ItemType[]): boolean => {
-    //     const item = items.find( (item) => {})
-    //     return false
-    // }
-
     /* - getAllParents(id) Принимает id элемента и возвращает массив из цепочки родительских элементов, начиная от самого элемента,
     чей id был передан в аргументе и до корневого элемента, т.е. должен получиться путь элемента наверх дерева через цепочку
     родителей к корню дерева. в результате getAllParents ПОРЯДОК ЭЛЕМЕНТОВ ВАЖЕН! */
@@ -137,14 +132,6 @@ ts.getChildren(5)
 ts.getChildren(2)
 
 ts.getAllChildren(2)
-
-    // [
-    //     {"id": 4, "parent": 2, "type": "test"},
-    //     {"id": 5, "parent": 2, "type": "test"},
-    //     {"id": 6, "parent": 2, "type": "test"},
-    //     {"id": 7, "parent": 4, "type": null},
-    //     {"id": 8, "parent": 4, "type": null}
-    // ]
 
 ts.getAllParents(7)
 
